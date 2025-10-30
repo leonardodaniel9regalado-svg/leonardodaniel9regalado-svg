@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porto - Tailwind Template</title>
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+    <body class="bg-gray-100">
+
+        <!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <img src="assets/image/navbar-logo.png" alt="Logo" class="h-10">
+
+    <!-- Menú de navegación -->
+    <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <li><a href="#presentacion" class="hover:text-blue-500 transition">Inicio</a></li>
+      <li><a href="#tecnologias" class="hover:text-blue-500 transition">Tecnologías</a></li>
+      <li><a href="#portafolio" class="hover:text-blue-500 transition">Portafolio</a></li>
+      <li><a href="#educacion" class="hover:text-blue-500 transition">Educación</a></li>
+      <li><a href="#experiencia" class="hover:text-blue-500 transition">Experiencia</a></li>
+      <li><a href="#hobbies" class="hover:text-blue-500 transition">Hobbies</a></li>
+      <li><a href="#contacto" class="hover:text-blue-500 transition">Contacto</a></li>
+    </ul>
+
+  </div>
+</nav>
+        
+       <!-- Sección Presentación -->
+<section id="presentacion" class="mt-24 py-10 md:py-16"> <!-- pt-24 para compensar navbar fixed -->
+    <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="text-center">
+            <div class="flex justify-center mb-16">
+                <img src="assets/image/IMG_4518.JPG" class="rounded-full w-44 h-44 object-cover border-4 border-gray shadow-lg" alt="Imagen">
+            </div>
+
+            <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">Leonardo Daniel Regalado Zúñiga</h6>
+
+            <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">Desarrollador de Software</h1>
+
+            <p class="font-normal text-gray-600 text-md md:text-xl mb-16">
+                Apasionado por la programación y el desarrollo de soluciones que mejoren la vida de las personas. 
+                Me motiva crear proyectos con impacto y seguir aprendiendo tecnologías que impulsen la innovación.
+            </p>
+
+            <!-- Contenedor de botones -->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="assets/portafolio_leonardo_regalado.pdf" download
+                    class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-blue-500 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">
+                    Descargar CV
+                </a>
+
+                <a href="assets/portafolio_leonardo_regalado.pdf" download
+                    class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">
+                    Descargar llave pública
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Tecnologías -->
+  <section id="tecnologias" class="py-10 md:py-16">
+    <div class="container max-w-screen-xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-50 px-8 py-10 rounded-md">
+          <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
+            <i data-feather="code"></i>
+          </div>
+          <h4 class="font-medium text-gray-700 text-lg mb-4">Lenguajes y Frameworks</h4>
+          <p class="font-normal text-gray-500 text-md">
+            Experiencia en Java, C y JavaScript (ES15), junto con frameworks como Spring Boot y Spring Data para el
+            desarrollo backend.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 px-8 py-10 rounded-md">
+          <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
+            <i data-feather="database"></i>
+          </div>
+          <h4 class="font-medium text-gray-700 text-lg mb-4">Bases de Datos</h4>
+          <p class="font-normal text-gray-500 text-md">
+            Manejo de SQL y MySQL Workbench. Diseño, conexión y optimización de esquemas de bases de datos relacionales.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 px-8 py-10 rounded-md">
+          <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
+            <i data-feather="git-branch"></i>
+          </div>
+          <h4 class="font-medium text-gray-700 text-lg mb-4">Herramientas y Control de Versiones</h4>
+          <p class="font-normal text-gray-500 text-md">
+            Uso avanzado de Git y GitHub para control de versiones, manejo de ramas y colaboración en proyectos en
+            equipo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Portafolio -->
+  <section id="portafolio" class="py-10 md:py-16">
+    <div class="container max-w-screen-xl mx-auto px-4">
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="mb-10 lg:mb-0">
+          <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Portafolio</h1>
+          <p class="font-normal text-gray-500 text-xs md:text-base">
+            Algunos de mis proyectos y colaboraciones más representativos.
+          </p>
+        </div>
+
+        <div class="space-y-24">
+          <div class="flex space-x-6">
+            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">01</h1>
+            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+            <div>
+              <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Urbix</h1>
+              <p class="font-normal text-gray-500 text-sm md:text-base">
+                Plataforma web para el reporte y seguimiento de incidentes urbanos en CDMX. 
+                Desarrollada con Node.js, Vue.js, Django y MySQL, integra mapas interactivos y despliegue en AWS con CI/CD.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex space-x-6">
+            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">02</h1>
+            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+            <div>
+              <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Expobatiz: Lowchart Builder</h1>
+              <p class="font-normal text-gray-500 text-sm md:text-base">
+                Proyecto académico que facilita la enseñanza de diagramas de flujo. Encargado del backend en Java y la conexión con base de datos SQL.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex space-x-6">
+            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">03</h1>
+            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+            <div>
+              <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Google Cloud Foundations</h1>
+              <p class="font-normal text-gray-500 text-sm md:text-base">
+                Programa dirigido por Nebursaturn Academy. Experiencia práctica en arquitecturas basadas en contenedores y gestión de recursos en la nube.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- Educación -->
+  <section id="educacion" class="py-10 md:py-16">
+    <div class="container max-w-screen-xl mx-auto px-4">
+      <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Educación</h1>
+      <p class="font-normal text-gray-500 text-xs md:text-base mb-20">Mi formación académica</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-50 px-8 py-10 rounded-md">
+          <h4 class="font-medium text-gray-700 text-lg mb-4">2023 – 2027</h4>
+          <p class="font-normal text-gray-500 text-md mb-4">Universidad ESCOM - IPN <br> Ingeniería en Sistemas Computacionales</p>
+        </div>
+
+        <div class="bg-gray-50 px-8 py-10 rounded-md">
+          <h4 class="font-medium text-gray-700 text-lg mb-4">2019 – 2022</h4>
+          <p class="font-normal text-gray-500 text-md mb-4">CECyT 9 - IPN <br> Técnico en Programación</p>
+        </div>
+
+        <div class="bg-gray-50 px-8 py-10 rounded-md">
+          <h4 class="font-medium text-gray-700 text-lg mb-4">Octubre - Diciembre 2022</h4>
+          <p class="font-normal text-gray-500 text-md mb-4">ILAC Toronto <br> Certificación Avanzada en Inglés - Nivel 12</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Experiencia -->
+  <section id="experiencia" class="py-10 md:py-16">
+    <div class="container max-w-screen-xl mx-auto px-4">
+      <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Experiencia</h1>
+      <p class="font-normal text-gray-500 text-xs md:text-base mb-20">Trayectoria profesional y programas técnicos</p>
+
+      <div class="flex flex-col lg:flex-row justify-between">
+        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+          <h6 class="font-medium text-gray-400 text-base uppercase">Organización</h6>
+          <p class="font-semibold text-gray-600 text-base">IBM México</p>
+          <p class="font-semibold text-gray-600 text-base">Google Cloud Foundations</p>
+        </div>
+
+        <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+          <h6 class="font-medium text-gray-400 text-base uppercase">Rol</h6>
+          <p class="font-normal text-gray-400 text-base">Technical Sales Intern</p>
+          <p class="font-normal text-gray-400 text-base">Participant - Cloud Practition Role</p>
+        </div>
+
+        <div class="space-y-8 md:space-y-16">
+          <h6 class="font-medium text-gray-400 text-base uppercase">Año</h6>
+          <p class="font-normal text-gray-400 text-base">2025 - Actualidad</p>
+          <p class="font-normal text-gray-400 text-base">2025 - Actualidad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        
+<!-- CVriptografia-->
+      <section id="inspiracion" class="py-16 bg-gray-50">
+  <div class="container max-w-6xl mx-auto px-4">
+    <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-12 text-center">Criptografia</h1>
+    <p class="font-normal text-gray-500 text-base md:text-lg mb-16 text-center">
+      Historias, algoritmos y eventos que me motivan a seguir aprendiendo sobre criptografía y desarrollo de software.
+    </p>
+
+    <!-- Artículo 1: Criptógrafo -->
+    <article class="flex flex-col lg:flex-row items-center mb-16 gap-8">
+      <img src="assets/image/Whitfiel.jpg" alt="Whitfield Diffie" 
+     class="w-full lg:w-2/3 max-w-md h-auto rounded-md shadow-md object-cover">
+
+      <div class="lg:w-1/3">
+        <h2 class="font-semibold text-gray-700 text-2xl md:text-3xl mb-4">Whitfield Diffie: Innovación y resiliencia</h2>
+        <p class="text-gray-600 text-md md:text-lg mb-4">
+          Whitfield Diffie revolucionó la criptografía al inventar, junto a Martin Hellman, la criptografía de clave pública. Antes de su innovación, la mayoría de los sistemas dependían de claves secretas compartidas, lo que limitaba la seguridad y la escalabilidad.
+        </p>
+        <p class="text-gray-600 text-md md:text-lg mb-4">
+          Su perseverancia frente a la resistencia de la comunidad científica demuestra que las ideas visionarias requieren resiliencia y pasión por la innovación.
+        </p>
+        <p class="text-gray-400 text-sm">Fuente: Historia de la criptografía moderna</p>
+      </div>
+    </article>
+
+    <!-- Artículo 2: Algoritmo -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+  <article class="bg-white p-6 rounded-md shadow-md">
+    <h2 class="font-semibold text-gray-700 text-2xl md:text-3xl mb-4">AES – Advanced Encryption Standard</h2>
+    <p class="text-gray-600 text-md md:text-lg mb-4">
+      Inspirado por la necesidad de sistemas más seguros, AES fue seleccionado en 2001 tras un concurso internacional. Su diseño robusto protege millones de transacciones diarias.
+    </p>
+    <p class="text-gray-600 text-md md:text-lg mb-4">
+      La historia de AES muestra cómo la investigación colaborativa y la innovación técnica transforman ideas teóricas en herramientas prácticas que impactan a todo el mundo digital.
+    </p>
+  </article>
+
+  <!-- Evento -->
+  <article class="bg-white p-6 rounded-md shadow-md">
+    <h2 class="font-semibold text-gray-700 text-2xl md:text-3xl mb-4">Black Hat 2023</h2>
+    <p class="text-gray-600 text-md md:text-lg mb-4">
+      La conferencia Black Hat reúne a expertos en criptografía y ciberseguridad de todo el mundo. Representa la aplicación práctica de conceptos y algoritmos desarrollados por pioneros como Diffie y el equipo de AES.
+    </p>
+    <p class="text-gray-600 text-md md:text-lg mb-4">
+      Este tipo de eventos refuerza la idea de que la criptografía es un campo vivo y en constante evolución, y que la colaboración global impulsa la innovación y el aprendizaje continuo.
+    </p>
+  </article>
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+
+        <!-- Hobbies e Intereses -->
+<section id="hobbies" class="py-10 md:py-16">
+  <div class="container max-w-screen-xl mx-auto px-4">
+    <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Hobbies e Intereses</h1>
+    <p class="font-normal text-gray-500 text-xs md:text-base mb-10 md:mb-20">
+      Actividades que disfruto fuera del ámbito profesional
+    </p>
+
+    <!-- Tarjetas de hobbies -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Juegos de Mesa -->
+      <div class="bg-gray-50 rounded-md overflow-hidden shadow-md text-center">
+        <img src="./assets/image/juyego.jpeg" 
+             alt="Juegos de Mesa" 
+             class="w-full h-48 object-cover">
+        <div class="px-8 py-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">Juegos de Mesa</h3>
+          <p class="text-gray-600 text-md">
+            Me gusta participar en juegos de estrategia que estimulan la lógica y fomentan el trabajo en equipo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cine -->
+      <div class="bg-gray-50 rounded-md overflow-hidden shadow-md text-center">
+        <img src="./assets/image/cine.jpeg" 
+             alt="Cine" 
+             class="w-full h-48 object-cover">
+        <div class="px-8 py-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">Cine</h3>
+          <p class="text-gray-600 text-md">
+            Disfruto del cine por su capacidad para transmitir emociones e ideas, especialmente en los géneros de ciencia ficción y acción.
+          </p>
+        </div>
+      </div>
+
+      <!-- Deporte -->
+      <div class="bg-gray-50 rounded-md overflow-hidden shadow-md text-center">
+        <img src="./assets/image/deporte.jpeg" 
+             alt="Deporte" 
+             class="w-full h-48 object-cover">
+        <div class="px-8 py-6">
+          <h3 class="text-xl font-semibold mb-2 text-gray-700">Deporte</h3>
+          <p class="text-gray-600 text-md">
+            Practico deportes regularmente para mantenerme activo y fortalecer mi disciplina y trabajo en equipo.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+       <!-- Footer -->
+  <footer class="py-10 md:py-16 mb-20 md:mb-40">
+    <div class="container max-w-screen-xl mx-auto px-4 text-center">
+      <h1 class="font-medium text-gray-700 text-4xl md:text-5xl mb-5">Contacto</h1>
+      <p class="font-normal text-gray-400 text-md md:text-lg mb-20">
+        Actualmente estoy abierto a nuevos proyectos, puedes contactarme para colaboraciones.
+      </p>
+
+      <div class="flex items-center justify-center space-x-8">
+        <a href="https://www.linkedin.com/in/leonardo-daniel-regalado-zúñiga-3b6180214"
+          class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+          <i data-feather="linkedin" class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500"></i>
+        </a>
+        <a href="mailto:leonardo.daniel9regalado@gmail.com"
+          class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+          <i data-feather="mail" class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500"></i>
+        </a>
+        <a href="https://github.com/LeonardoRegalado"
+          class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+          <i data-feather="github" class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+        <script>
+            feather.replace()
+        </script>
+
+    </body>
+</html>
